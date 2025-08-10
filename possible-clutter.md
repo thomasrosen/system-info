@@ -18,6 +18,7 @@ The folder `~/Library/Containers/com.apple.AMPArtworkAgent` was a few GB. This i
 ### .git repo folders
 Sometimes cleaning up a git repo is a good idea. Linus has some words about that here: https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
 In short, run `git repack -a -d --depth=250 --window=250`. This apparently can take a long time, so run it over night.
+Here is a loop, to apply that to all subfolders (if they are a git-repo): `for d in */; do (cd "$d" && git rev-parse --is-inside-work-tree >/dev/null 2>&1 && echo "=== $d ===" && git repack -a -d --depth=250 --window=250); done`.
 
 To be continued…
 
