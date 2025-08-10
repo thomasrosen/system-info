@@ -12,6 +12,9 @@ If you develop javascript stuff these can clutter a huge portion of your system.
 Use `find . -type d -name node_modules -prune 2>/dev/null` to get the node_modules folders in the current dictonary. `-prune` stops find from going into subfolders inside node_modules.
 Checking the whole system often was not helpful, as many electron apps also have a node_modules folder that is needed for them to function.
 
+### Apple Music Artwork caching
+The folder `~/Library/Containers/com.apple.AMPArtworkAgent` was a few GB. This is apperently a process to cache artwork for apple music.
+
 To be continued…
 
 ## Terminal Stuff
