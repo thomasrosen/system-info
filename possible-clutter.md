@@ -15,6 +15,10 @@ Checking the whole system often was not helpful, as many electron apps also have
 ### Apple Music Artwork caching
 The folder `~/Library/Containers/com.apple.AMPArtworkAgent` was a few GB. This is apperently a process to cache artwork for apple music.
 
+### .git repo folders
+Sometimes cleaning up a git repo is a good idea. Linus has some words about that here: https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
+In short, run `git repack -a -d --depth=250 --window=250`. This apparently can take a long time, so run it over night.
+
 To be continued…
 
 ## Terminal Stuff
@@ -32,3 +36,5 @@ Use `rm -R your_folder_path` to delete whole dictonaries. PLEASE be careful!!! T
 [What is safe to delete?](https://daisydiskapp.com/guide/what-to-delete)
 
 Something about `DARWIN_USER_CACHE_DIR`: [The missing gigabytes of disk space on my Mac](https://www.ctrl.blog/entry/darwin-user-cache-gigabytes.html)
+
+About cleaning git repos. [Re: Git and GCC](https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html)
