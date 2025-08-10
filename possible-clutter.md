@@ -27,3 +27,5 @@ Use `rm -R your_folder_path` to delete whole dictonaries. PLEASE be careful!!! T
 ## Articles about cleaning storage space on macos
 
 [What is safe to delete?](https://daisydiskapp.com/guide/what-to-delete)
+
+Something about `DARWIN_USER_CACHE_DIR`: [The missing gigabytes of disk space on my Mac](https://www.ctrl.blog/entry/darwin-user-cache-gigabytes.html)
