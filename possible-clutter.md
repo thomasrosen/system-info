@@ -14,6 +14,16 @@ Checking the whole system often was not helpful, as many electron apps also have
 
 To be continued…
 
+## Terminal Stuff
+
+To get the folders in your current dictonary listed sorted by size, use `du`.
+Here is a full command is use: `du -h -d 1 -t 2M | sort -hr`. This also only gets the folders over 2mb.
+Use `du -sh *` to get the size of all direct subfolders without sorting or restrictions.
+
+Find folders by using something like `find . -type d -name "node_modules" 2>/dev/null`. (`2>/dev/null` makes it ignore all errors.)
+
+Use `rm -R your_folder_path` to delete whole dictonaries. PLEASE be careful!!! This deletes stuff without being able to bring it back.
+
 ## Articles about cleaning storage space on macos
 
 [What is safe to delete?](https://daisydiskapp.com/guide/what-to-delete)
